@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+/*
+'Rubik', sans-serif;
+"Open Sans Condensed", sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/4394612/pexels-photo-4394612.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
+  background-position: 50%;
+  font-family: "Rubik", sans-serif;
+  color: #222326;
+}
+
+.color-overlay {
+  background-color: rgba(246, 244, 214, 0.75);
+}
+
+header {
+  color: #222326;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 2% 0;
+}
+
+header h1,
+header p {
+  padding: 1% 5%;
+  margin: 0 0;
+  border-radius: 50px;
+}
+
+header h1 {
+  font-size: 60px;
+}
+
+header p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+header h1 span {
+  text-decoration: underline;
+}
+
+main {
+  padding: 10vh auto;
+}
+
+#survey-form fieldset {
+  padding: 0.35em 0.75em 0.625em;
+  border-radius: 3px;
+  border: none;
+}
+
+#survey-form fieldset p {
+  padding: 2% 0;
+  font-weight: 400;
+}
+
+#survey-form > fieldset,
+#survey-form .cormicone,
+#survey-form .user-info {
+  border-left: 3px solid #f9b64a;
+  border-bottom: 3px solid #f9b64a;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 5px -5px 3px -3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px -5px 3px -3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px -5px 3px -3px rgba(0, 0, 0, 0.3);
+}
+
+#survey-form > fieldset > legend,
+#survey-form .cormicone > legend,
+#survey-form .user-info > legend {
+  background-color: #222326;
+  color: #f6f4d6;
+  padding: 3%;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+.crusts p,
+.toppings p,
+.cormicone p {
+  width: 100%;
+}
+
+.crusts,
+.toppings {
+  width: 28%;
+  min-width: 28%;
+  height: 45vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#survey-form .crusts fieldset legend,
+#survey-form .toppings fieldset legend {
+  font-weight: 700;
+  padding: 2%;
+}
+
+#survey-form .crusts fieldset,
+#survey-form .toppings fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  border-top: 1px solid #4b8f2c;
+  border-bottom: 1px solid #4b8f2c;
+}
+
+#survey-form .crusts fieldset:nth-child(5),
+#survey-form .toppings fieldset:nth-child(5) {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.thin {
+  width: 32%;
+}
+
+.thick {
+  width: 48%;
+}
+
+.custom {
+  width: 90%;
+}
+
+.meats {
+  width: 40%;
+}
+
+.veggies {
+  width: 40%;
+}
+
+.other {
+  width: 90%;
+}
+
+.cormicone,
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cormicone {
+  height: 15%;
+}
+
+.cormicone div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cormicone select {
+  border: none;
+  border-radius: 3px;
+  border-bottom: 2px solid #4b8f2c;
+}
+
+.user-info label {
+  display: none;
+}
+
+.user-info input,
+.user-info textarea {
+  margin: 3%;
+  padding: 3%;
+  border: none;
+  border-bottom: 2px solid #4b8f2c;
+  border-radius: 3px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.user-info input:focus,
+.user-info textarea:focus {
+  font-weight: 700;
+}
+
+.user-info input:empty,
+.user-info textarea:empty {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.user-info input:valid,
+.user-info textarea:valid {
+  background-color: rgba(130, 245, 77, 0.2);
+}
+
+.user-info input:focus:invalid,
+.user-info textarea:focus:invalid {
+  background-color: rgb(191, 54, 23, 0.1);
+}
+
+.user-info section {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+
+.user-info section h3 {
+  font-size: 18px;
+}
+
+#price-value {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#submit {
+  background-color: #ff7a25;
+  padding: 2%;
+  font-weight: 700;
+  font-size: 16px;
+  align-self: flex-end;
+  border: none;
+  border-radius: 3px;
+  color: #f6f4d6;
+}
+
+#submit:hover {
+  background-color: #bf3617;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1681px) {
+  #survey-form {
+    width: 95%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  .last-panel {
+    width: 32%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .cormicone div {
+    justify-content: space-around;
+  }
+
+  .cormicone select {
+    font-size: 24px;
+  }
+
+  .user-info input,
+  .user-info textarea {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1680px) and (min-width: 1440px) {
+  #survey-form {
+    width: 95%;
+    margin: 0 auto;
+    height: 110vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .last-panel {
+    width: 32%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1439px) and (min-width: 1100px) {
+  #survey-form {
+    width: 95%;
+    margin: 0 auto;
+    height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .last-panel {
+    width: 32%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1099px) and (min-width: 768px) {
+  #survey-form {
+    width: 95%;
+    margin: 0 auto;
+    height: 110vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .crusts,
+  .toppings {
+    width: 45%;
+    min-width: 45%;
+    height: 46vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .last-panel {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cormicone {
+    width: 45%;
+  }
+
+  .cormicone div {
+    justify-content: space-around;
+  }
+
+  .user-info {
+    width: 45%;
+    height: 46vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .user-info input {
+    height: 2vh;
+    width: 30%;
+  }
+
+  .user-info textarea {
+    height: 2vh;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 600px) {
+  header {
+    text-align: center;
+  }
+
+  #survey-form {
+    width: 95%;
+    margin: 0 auto;
+    height: 250vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .crusts,
+  .toppings {
+    width: 75%;
+    min-width: 75%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .last-panel {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cormicone {
+    width: 75%;
+  }
+
+  .user-info {
+    width: 75%;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  header {
+    text-align: center;
+  }
+
+  #survey-form {
+    width: 95%;
+    margin: 0 auto;
+    height: 250vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .crusts,
+  .toppings {
+    width: 90%;
+    min-width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .last-panel {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cormicone {
+    width: 90%;
+  }
+
+  .user-info {
+    width: 90%;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Pizza Form</title>
+  </head>
+  <body>
+    <div class="color-overlay">
+      <header>
+        <h1 id="title">Build <span>your</span> Pizza!</h1>
+        <p id="description">Choose your crust, toppings and border!</p>
+      </header>
+      <main>
+        <form action="" id="survey-form">
+          <fieldset class="crusts">
+            <legend>Crusts</legend>
+            <p>What type of crust do you prefer?</p>
+            <fieldset class="thin">
+              <legend>Thin Crusts</legend>
+              <div>
+                <input
+                  type="radio"
+                  name="crust"
+                  id="new-haven"
+                  value="New Haven"
+                  checked
+                />
+                <label for="new-haven">New Haven</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="crust"
+                  id="st-louis"
+                  value="St. Louis"
+                />
+                <label for="st-louis">St. Louis</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="crust"
+                  id="neapolitan"
+                  value="Neapolitan"
+                />
+                <label for="neapolitan">Neapolitan</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="crust"
+                  id="new-york"
+                  value="New York"
+                />
+                <label for="new-york">New York</label>
+              </div>
+            </fieldset>
+            <fieldset class="thick">
+              <legend>Thick Crusts</legend>
+              <div>
+                <input
+                  type="radio"
+                  name="crust"
+                  id="double-dough"
+                  value="Double Dough"
+                />
+                <label for="double-dough">Double Dough</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="crust"
+                  id="sicilian"
+                  value="Sicilian"
+                />
+                <label for="sicilian">Sicilian</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="crust"
+                  id="chicago-deep-dish"
+                  value="Chicago Deep-Dish"
+                />
+                <label for="chicago-deep-dish">Chicago Deep-Dish</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="crust"
+                  id="focaccia"
+                  value="Focaccia"
+                />
+                <label for="focaccia">Focaccia</label>
+              </div>
+            </fieldset>
+            <fieldset class="custom">
+              <legend>Custom Crusts</legend>
+              <div>
+                <input
+                  type="radio"
+                  name="crust"
+                  id="gluten-free"
+                  value="Gluten-Free"
+                />
+                <label for="gluten-free">Gluten-Free</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="crust"
+                  id="vegan-friendly"
+                  value="Vegan-Friendly"
+                />
+                <label for="vegan-friendly">Vegan-Friendly</label>
+              </div>
+            </fieldset>
+          </fieldset>
+          <fieldset class="toppings">
+            <legend>Toppings</legend>
+            <p>Choose all the toppings you desire!</p>
+            <fieldset class="meats">
+              <legend>Meats</legend>
+              <div>
+                <input type="checkbox" name="topping" id="ham" value="Ham" />
+                <label for="ham">Ham</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="topping"
+                  id="sausage"
+                  value="Sausage"
+                />
+                <label for="sausage">Sausage</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="topping"
+                  id="pepperoni"
+                  value="Pepperoni"
+                  checked
+                />
+                <label for="pepperoni">Pepperoni</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="topping"
+                  id="bacon-cubes"
+                  value="Bacon Cubes"
+                  checked
+                />
+                <label for="bacon-cubes">Bacon Cubes</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="topping"
+                  id="anchovy"
+                  value="Anchovy"
+                />
+                <label for="anchovy">Anchovy</label>
+              </div>
+            </fieldset>
+            <fieldset class="veggies">
+              <legend>Veggies</legend>
+              <div>
+                <input
+                  type="checkbox"
+                  name="topping"
+                  id="tomato"
+                  value="Tomato"
+                  checked
+                />
+                <label for="tomato">Tomato</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="topping"
+                  id="onion"
+                  value="Onion"
+                  checked
+                />
+                <label for="onion">Onion</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="topping"
+                  id="fresh-basil"
+                  value="Fresh Basil"
+                  checked
+                />
+                <label for="fresh-basil">Fresh Basil</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="topping"
+                  id="fresh-garlic"
+                  value="Fresh Garlic"
+                  checked
+                />
+                <label for="fresh-garlic">Fresh Garlic</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="topping"
+                  id="black-olives"
+                  value="Black Olives"
+                />
+                <label for="black-olives">Black Olives</label>
+              </div>
+            </fieldset>
+            <fieldset class="other">
+              <legend>Other</legend>
+              <div>
+                <input
+                  type="checkbox"
+                  name="topping"
+                  id="extra-cheese"
+                  value="Extra Cheese"
+                  checked
+                />
+                <label for="extra-cheese">Extra Cheese</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="topping"
+                  id="mushrooms"
+                  value="Mushrooms"
+                  checked
+                />
+                <label for="mushrooms">Mushrooms</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="topping"
+                  id="pineapple"
+                  value="Pineapple"
+                />
+                <label for="pineapple">Pineapple</label>
+              </div>
+            </fieldset>
+          </fieldset>
+          <section class="last-panel">
+            <fieldset class="cormicone">
+              <legend>Cormicone Border</legend>
+              <p>How do you like your border?</p>
+              <div>
+                <label for="dropdown">Choose your cormicone:</label>
+                <select name="cormicone" id="dropdown">
+                  <option value="">-- Please choose one --</option>
+                  <optgroup label="Not filled">
+                    <option value="Regular">Regular</option>
+                    <option value="Brushed with olive oil">
+                      Brushed With Olive Oil
+                    </option>
+                    <option value="Brusehd with butter">
+                      Brushed With Butter
+                    </option>
+                  </optgroup>
+                  <optgroup label="Filled">
+                    <option value="Provolone Cheese">Provolone Cheese</option>
+                    <option value="Catupiry Cheese">Catupiry Cheese</option>
+                    <option value="Cream Cheese">Cream Cheese</option>
+                  </optgroup>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset class="user-info">
+              <legend>Enter your info:</legend>
+              <label for="name" id="name-label" 
+                />Name:</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                required/>
+              <label for="email" id="email-label">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                required/>
+              <label for="quantity" id="number-label" 
+                >How many pizzas?</label
+              >
+              <input
+                type="number"
+                name="pizza-quantity"
+                id="quantity"
+                min="1"
+                max="10"
+                placeholder="How many pizzas?"
+                required/>
+              <label for="requests">Do you have any other requests?</label>
+              <textarea
+                name="requests"
+                id="requests"
+                cols="30"
+                rows="5"
+                placeholder="Do you have any other requests?"
+                required></textarea>
+              <section class="price">
+                <h3>Total:</h3>
+                <p id="price-value">$</p>
+              </section>
+              <button id="submit" type="submit">Order now</button>
+            </fieldset>
+          </section>
+        </form>
+      </main>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
